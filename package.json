@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "remotion studio",
 
-    "render:all":  "npm run render:s1 && npm run render:s2 && npm run render:s3 && npm run render:s4 && npm run render:s5 && npm run render:s6 && npm run render:s7 && npm run render:s8 && npm run render:s9 && npm run render:s10 && npm run render:ls1",
+    "render:all":  "npm run render:s1 && npm run render:s2 && npm run render:s3 && npm run render:s4 && npm run render:s5 && npm run render:s6 && npm run render:s7 && npm run render:s8 && npm run render:s9 && npm run render:s10 && npm run render:ls1 && npm run render:ls2",
 
     "render:s1": "npm run render:focuspie && npm run render:fourhours && npm run render:23min && npm run render:switching && npm run render:90days",
     "render:s2": "npm run render:5kphysics && npm run render:interrogation && npm run render:3fixes && npm run render:hundredbeats",
@@ -18,6 +18,7 @@
     "render:s9": "npm run render:editingtreadmill && npm run render:eightypercent && npm run render:threeeditrules && npm run render:overeditingvsproducing",
     "render:s10": "npm run render:disorganizedvscompetent && npm run render:tenpercent && npm run render:haloeffect && npm run render:threebackgroundrules",
     "render:ls1": "npm run render:fiftyvsfiiftythousand && npm run render:popularvsrespected && npm run render:rightfivepercent && npm run render:teachingvsdiagnosing && npm run render:threeauditquestions",
+    "render:ls2": "npm run render:whatdoyoudo && npm run render:ninetypercent && npm run render:sevenhours && npm run render:videoasemployee && npm run render:chasingvsattracting && npm run render:frictionaudit",
 
     "render:focuspie":       "remotion render FocusPie             out/s1-01-focus-pie.webm              --pixel-format yuva420p",
     "render:fourhours":      "remotion render FourHoursCost         out/s1-02-four-hours-cost.webm         --pixel-format yuva420p",
@@ -44,6 +45,13 @@
     "render:managerVscreator":   "remotion render ManagerVsCreator   out/s5-02-manager-vs-creator.webm     --pixel-format yuva420p",
     "render:setuptax":           "remotion render SetupTax           out/s5-03-setup-tax.webm              --pixel-format yuva420p",
     "render:threebatchrules":    "remotion render ThreeBatchRules    out/s5-04-three-batch-rules.webm      --pixel-format yuva420p",
+
+    "render:whatdoyoudo":          "remotion render WhatDoYouDo         out/ls2-01-what-do-you-do.webm          --pixel-format yuva420p",
+    "render:ninetypercent":        "remotion render NinetyPercent        out/ls2-02-ninety-percent.webm          --pixel-format yuva420p",
+    "render:sevenhours":           "remotion render SevenHours           out/ls2-03-seven-hours.webm             --pixel-format yuva420p",
+    "render:videoasemployee":      "remotion render VideoAsEmployee      out/ls2-04-video-as-employee.webm       --pixel-format yuva420p",
+    "render:chasingvsattracting":  "remotion render ChasingVsAttracting  out/ls2-05-chasing-vs-attracting.webm   --pixel-format yuva420p",
+    "render:frictionaudit":        "remotion render FrictionAudit        out/ls2-06-friction-audit.webm          --pixel-format yuva420p",
 
     "render:fiftyvsfiiftythousand":  "remotion render FiftyVsFiftyThousand out/ls1-01-fifty-vs-fifty-thousand.webm  --pixel-format yuva420p",
     "render:popularvsrespected":     "remotion render PopularVsRespected   out/ls1-02-popular-vs-respected.webm    --pixel-format yuva420p",
@@ -76,7 +84,7 @@
     "render:flatvsdimensional":   "remotion render FlatVsDimensional   out/s6-03-flat-vs-dimensional.webm    --pixel-format yuva420p",
     "render:threelights":         "remotion render ThreeLights         out/s6-04-three-lights.webm           --pixel-format yuva420p",
 
-    "render:prores:all": "npm run render:prores:s1 && npm run render:prores:s2 && npm run render:prores:s3 && npm run render:prores:s4 && npm run render:prores:s5 && npm run render:prores:s6 && npm run render:prores:s7 && npm run render:prores:s8 && npm run render:prores:s9 && npm run render:prores:s10 && npm run render:prores:ls1",
+    "render:prores:all": "npm run render:prores:s1 && npm run render:prores:s2 && npm run render:prores:s3 && npm run render:prores:s4 && npm run render:prores:s5 && npm run render:prores:s6 && npm run render:prores:s7 && npm run render:prores:s8 && npm run render:prores:s9 && npm run render:prores:s10 && npm run render:prores:ls1 && npm run render:prores:ls2",
 
     "render:prores:s1": "npm run render:prores:focuspie && npm run render:prores:fourhours && npm run render:prores:23min && npm run render:prores:switching && npm run render:prores:90days",
     "render:prores:s2": "npm run render:prores:5kphysics && npm run render:prores:interrogation && npm run render:prores:3fixes && npm run render:prores:hundredbeats",
@@ -89,6 +97,7 @@
     "render:prores:s9": "npm run render:prores:editingtreadmill && npm run render:prores:eightypercent && npm run render:prores:threeeditrules && npm run render:prores:overeditingvsproducing",
     "render:prores:s10": "npm run render:prores:disorganizedvscompetent && npm run render:prores:tenpercent && npm run render:prores:haloeffect && npm run render:prores:threebackgroundrules",
     "render:prores:ls1": "npm run render:prores:fiftyvsfiiftythousand && npm run render:prores:popularvsrespected && npm run render:prores:rightfivepercent && npm run render:prores:teachingvsdiagnosing && npm run render:prores:threeauditquestions",
+    "render:prores:ls2": "npm run render:prores:whatdoyoudo && npm run render:prores:ninetypercent && npm run render:prores:sevenhours && npm run render:prores:videoasemployee && npm run render:prores:chasingvsattracting && npm run render:prores:frictionaudit",
 
     "render:prores:focuspie":       "remotion render FocusPie             out/s1-01-focus-pie.mov              --codec prores --prores-profile 4444",
     "render:prores:fourhours":      "remotion render FourHoursCost         out/s1-02-four-hours-cost.mov         --codec prores --prores-profile 4444",
@@ -140,6 +149,13 @@
     "render:prores:tenpercent":              "remotion render TenPercent              out/s10-02-ten-percent.mov               --codec prores --prores-profile 4444",
     "render:prores:haloeffect":              "remotion render HaloEffect              out/s10-03-halo-effect.mov               --codec prores --prores-profile 4444",
     "render:prores:threebackgroundrules":    "remotion render ThreeBackgroundRules    out/s10-04-three-background-rules.mov    --codec prores --prores-profile 4444",
+
+    "render:prores:whatdoyoudo":          "remotion render WhatDoYouDo         out/ls2-01-what-do-you-do.mov          --codec prores --prores-profile 4444",
+    "render:prores:ninetypercent":        "remotion render NinetyPercent        out/ls2-02-ninety-percent.mov          --codec prores --prores-profile 4444",
+    "render:prores:sevenhours":           "remotion render SevenHours           out/ls2-03-seven-hours.mov             --codec prores --prores-profile 4444",
+    "render:prores:videoasemployee":      "remotion render VideoAsEmployee      out/ls2-04-video-as-employee.mov       --codec prores --prores-profile 4444",
+    "render:prores:chasingvsattracting":  "remotion render ChasingVsAttracting  out/ls2-05-chasing-vs-attracting.mov   --codec prores --prores-profile 4444",
+    "render:prores:frictionaudit":        "remotion render FrictionAudit        out/ls2-06-friction-audit.mov          --codec prores --prores-profile 4444",
 
     "render:prores:fiftyvsfiiftythousand":  "remotion render FiftyVsFiftyThousand out/ls1-01-fifty-vs-fifty-thousand.mov  --codec prores --prores-profile 4444",
     "render:prores:popularvsrespected":     "remotion render PopularVsRespected   out/ls1-02-popular-vs-respected.mov    --codec prores --prores-profile 4444",

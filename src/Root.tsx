@@ -69,6 +69,14 @@ import { RightFivePercent }      from "./RightFivePercent";
 import { TeachingVsDiagnosing }  from "./TeachingVsDiagnosing";
 import { ThreeAuditQuestions }   from "./ThreeAuditQuestions";
 
+// ── Long Script 2: Pre-Sales / Video as Infrastructure ─────────────────────
+import { WhatDoYouDo }          from "./WhatDoYouDo";
+import { NinetyPercent }        from "./NinetyPercent";
+import { SevenHours }           from "./SevenHours";
+import { VideoAsEmployee }      from "./VideoAsEmployee";
+import { ChasingVsAttracting }  from "./ChasingVsAttracting";
+import { FrictionAudit }        from "./FrictionAudit";
+
 export const Root: React.FC = () => {
   return (
     <>
@@ -139,6 +147,14 @@ export const Root: React.FC = () => {
       <Composition id="RightFivePercent"     component={RightFivePercent}     durationInFrames={210} fps={30} width={1920} height={1080} />
       <Composition id="TeachingVsDiagnosing" component={TeachingVsDiagnosing} durationInFrames={210} fps={30} width={1920} height={1080} />
       <Composition id="ThreeAuditQuestions"  component={ThreeAuditQuestions}  durationInFrames={210} fps={30} width={1920} height={1080} />
+
+      {/* ── Long Script 2: Pre-Sales / Video as Infrastructure ────────────── */}
+      <Composition id="WhatDoYouDo"         component={WhatDoYouDo}         durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="NinetyPercent"       component={NinetyPercent}       durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="SevenHours"          component={SevenHours}          durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="VideoAsEmployee"     component={VideoAsEmployee}     durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="ChasingVsAttracting" component={ChasingVsAttracting} durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="FrictionAudit"       component={FrictionAudit}       durationInFrames={210} fps={30} width={1920} height={1080} />
     </>
   );
 };
