@@ -1,0 +1,162 @@
+{
+  "name": "focus-pie-remotion",
+  "version": "1.0.0",
+  "description": "Motion graphics suite — Scripts 1, 2 & 3",
+  "scripts": {
+    "dev": "remotion studio",
+
+    "render:all":  "npm run render:s1 && npm run render:s2 && npm run render:s3 && npm run render:s4 && npm run render:s5 && npm run render:s6 && npm run render:s7 && npm run render:s8 && npm run render:s9 && npm run render:s10 && npm run render:ls1",
+
+    "render:s1": "npm run render:focuspie && npm run render:fourhours && npm run render:23min && npm run render:switching && npm run render:90days",
+    "render:s2": "npm run render:5kphysics && npm run render:interrogation && npm run render:3fixes && npm run render:hundredbeats",
+    "render:s3": "npm run render:perceivedtruth && npm run render:listenerfatigue && npm run render:audiofixes && npm run render:3mics",
+    "render:s4": "npm run render:pitchvspartnership && npm run render:anchorpoints && npm run render:threetechniques && npm run render:perfectvsprolific",
+    "render:s5": "npm run render:preparationfatigue && npm run render:managerVscreator && npm run render:setuptax && npm run render:threebatchrules",
+    "render:s6": "npm run render:hobbyistvsauthority && npm run render:signalstrength && npm run render:flatvsdimensional && npm run render:threelights",
+    "render:s7": "npm run render:highchaireffect && npm run render:permissionvsdirection && npm run render:authoritysignal && npm run render:threeframingrules",
+    "render:s8": "npm run render:sixmonthsvssixtyseconds && npm run render:productivefailure && npm run render:threetests && npm run render:influencervssystem",
+    "render:s9": "npm run render:editingtreadmill && npm run render:eightypercent && npm run render:threeeditrules && npm run render:overeditingvsproducing",
+    "render:s10": "npm run render:disorganizedvscompetent && npm run render:tenpercent && npm run render:haloeffect && npm run render:threebackgroundrules",
+    "render:ls1": "npm run render:fiftyvsfiiftythousand && npm run render:popularvsrespected && npm run render:rightfivepercent && npm run render:teachingvsdiagnosing && npm run render:threeauditquestions",
+
+    "render:focuspie":       "remotion render FocusPie             out/s1-01-focus-pie.webm              --pixel-format yuva420p",
+    "render:fourhours":      "remotion render FourHoursCost         out/s1-02-four-hours-cost.webm         --pixel-format yuva420p",
+    "render:23min":          "remotion render TwentyThreeMin        out/s1-03-twenty-three-min.webm        --pixel-format yuva420p",
+    "render:switching":      "remotion render SwitchingCost         out/s1-04-switching-cost.webm          --pixel-format yuva420p",
+    "render:90days":         "remotion render NinetyDays            out/s1-05-ninety-days.webm             --pixel-format yuva420p",
+
+    "render:5kphysics":      "remotion render FiveKvsPhysics        out/s2-01-5k-vs-physics.webm           --pixel-format yuva420p",
+    "render:interrogation":  "remotion render InterrogationShadows  out/s2-02-interrogation-shadows.webm   --pixel-format yuva420p",
+    "render:3fixes":         "remotion render ThreeFixes            out/s2-03-three-fixes.webm             --pixel-format yuva420p",
+    "render:hundredbeats":   "remotion render HundredBeats          out/s2-04-hundred-beats.webm           --pixel-format yuva420p",
+
+    "render:perceivedtruth": "remotion render PerceivedTruth        out/s3-01-perceived-truth.webm         --pixel-format yuva420p",
+    "render:listenerfatigue":"remotion render ListenerFatigue       out/s3-02-listener-fatigue.webm        --pixel-format yuva420p",
+    "render:audiofixes":     "remotion render ThreeAudioFixes       out/s3-03-three-audio-fixes.webm       --pixel-format yuva420p",
+    "render:3mics":          "remotion render ThreeMicsUnder50      out/s3-04-three-mics-under-50.webm     --pixel-format yuva420p",
+
+    "render:pitchvspartnership": "remotion render PitchVsPartnership out/s4-01-pitch-vs-partnership.webm   --pixel-format yuva420p",
+    "render:anchorpoints":       "remotion render AnchorPoints       out/s4-02-anchor-points.webm           --pixel-format yuva420p",
+    "render:threetechniques":    "remotion render ThreeTechniques    out/s4-03-three-techniques.webm        --pixel-format yuva420p",
+    "render:perfectvsprolific":  "remotion render PerfectVsProlific  out/s4-04-perfect-vs-prolific.webm     --pixel-format yuva420p",
+
+    "render:preparationfatigue": "remotion render PreparationFatigue out/s5-01-preparation-fatigue.webm    --pixel-format yuva420p",
+    "render:managerVscreator":   "remotion render ManagerVsCreator   out/s5-02-manager-vs-creator.webm     --pixel-format yuva420p",
+    "render:setuptax":           "remotion render SetupTax           out/s5-03-setup-tax.webm              --pixel-format yuva420p",
+    "render:threebatchrules":    "remotion render ThreeBatchRules    out/s5-04-three-batch-rules.webm      --pixel-format yuva420p",
+
+    "render:fiftyvsfiiftythousand":  "remotion render FiftyVsFiftyThousand out/ls1-01-fifty-vs-fifty-thousand.webm  --pixel-format yuva420p",
+    "render:popularvsrespected":     "remotion render PopularVsRespected   out/ls1-02-popular-vs-respected.webm    --pixel-format yuva420p",
+    "render:rightfivepercent":       "remotion render RightFivePercent     out/ls1-03-right-five-percent.webm      --pixel-format yuva420p",
+    "render:teachingvsdiagnosing":   "remotion render TeachingVsDiagnosing out/ls1-04-teaching-vs-diagnosing.webm  --pixel-format yuva420p",
+    "render:threeauditquestions":    "remotion render ThreeAuditQuestions  out/ls1-05-three-audit-questions.webm   --pixel-format yuva420p",
+
+    "render:disorganizedvscompetent": "remotion render DisorganizedVsCompetent out/s10-01-disorganized-vs-competent.webm  --pixel-format yuva420p",
+    "render:tenpercent":              "remotion render TenPercent              out/s10-02-ten-percent.webm               --pixel-format yuva420p",
+    "render:haloeffect":              "remotion render HaloEffect              out/s10-03-halo-effect.webm               --pixel-format yuva420p",
+    "render:threebackgroundrules":    "remotion render ThreeBackgroundRules    out/s10-04-three-background-rules.webm    --pixel-format yuva420p",
+
+    "render:editingtreadmill":       "remotion render EditingTreadmill       out/s9-01-editing-treadmill.webm         --pixel-format yuva420p",
+    "render:eightypercent":          "remotion render EightyPercent          out/s9-02-eighty-percent.webm            --pixel-format yuva420p",
+    "render:threeeditrules":         "remotion render ThreeEditRules         out/s9-03-three-edit-rules.webm          --pixel-format yuva420p",
+    "render:overeditingvsproducing": "remotion render OverEditingVsProducing out/s9-04-over-editing-vs-producing.webm --pixel-format yuva420p",
+
+    "render:sixmonthsvssixtyseconds": "remotion render SixMonthsVsSixtySeconds out/s8-01-six-months-vs-sixty-seconds.webm --pixel-format yuva420p",
+    "render:productivefailure":       "remotion render ProductiveFailure       out/s8-02-productive-failure.webm          --pixel-format yuva420p",
+    "render:threetests":              "remotion render ThreeTests              out/s8-03-three-tests.webm                 --pixel-format yuva420p",
+    "render:influencervssystem":      "remotion render InfluencerVsSystem      out/s8-04-influencer-vs-system.webm        --pixel-format yuva420p",
+
+    "render:highchaireffect":       "remotion render HighChairEffect       out/s7-01-high-chair-effect.webm        --pixel-format yuva420p",
+    "render:permissionvsdirection": "remotion render PermissionVsDirection out/s7-02-permission-vs-direction.webm   --pixel-format yuva420p",
+    "render:authoritysignal":       "remotion render AuthoritySignal       out/s7-03-authority-signal.webm         --pixel-format yuva420p",
+    "render:threeframingrules":     "remotion render ThreeFramingRules     out/s7-04-three-framing-rules.webm      --pixel-format yuva420p",
+
+    "render:hobbyistvsauthority": "remotion render HobbyistVsAuthority out/s6-01-hobbyist-vs-authority.webm  --pixel-format yuva420p",
+    "render:signalstrength":      "remotion render SignalStrength      out/s6-02-signal-strength.webm        --pixel-format yuva420p",
+    "render:flatvsdimensional":   "remotion render FlatVsDimensional   out/s6-03-flat-vs-dimensional.webm    --pixel-format yuva420p",
+    "render:threelights":         "remotion render ThreeLights         out/s6-04-three-lights.webm           --pixel-format yuva420p",
+
+    "render:prores:all": "npm run render:prores:s1 && npm run render:prores:s2 && npm run render:prores:s3 && npm run render:prores:s4 && npm run render:prores:s5 && npm run render:prores:s6 && npm run render:prores:s7 && npm run render:prores:s8 && npm run render:prores:s9 && npm run render:prores:s10 && npm run render:prores:ls1",
+
+    "render:prores:s1": "npm run render:prores:focuspie && npm run render:prores:fourhours && npm run render:prores:23min && npm run render:prores:switching && npm run render:prores:90days",
+    "render:prores:s2": "npm run render:prores:5kphysics && npm run render:prores:interrogation && npm run render:prores:3fixes && npm run render:prores:hundredbeats",
+    "render:prores:s3": "npm run render:prores:perceivedtruth && npm run render:prores:listenerfatigue && npm run render:prores:audiofixes && npm run render:prores:3mics",
+    "render:prores:s4": "npm run render:prores:pitchvspartnership && npm run render:prores:anchorpoints && npm run render:prores:threetechniques && npm run render:prores:perfectvsprolific",
+    "render:prores:s5": "npm run render:prores:preparationfatigue && npm run render:prores:managervscreator && npm run render:prores:setuptax && npm run render:prores:threebatchrules",
+    "render:prores:s6": "npm run render:prores:hobbyistvsauthority && npm run render:prores:signalstrength && npm run render:prores:flatvsdimensional && npm run render:prores:threelights",
+    "render:prores:s7": "npm run render:prores:highchaireffect && npm run render:prores:permissionvsdirection && npm run render:prores:authoritysignal && npm run render:prores:threeframingrules",
+    "render:prores:s8": "npm run render:prores:sixmonthsvssixtyseconds && npm run render:prores:productivefailure && npm run render:prores:threetests && npm run render:prores:influencervssystem",
+    "render:prores:s9": "npm run render:prores:editingtreadmill && npm run render:prores:eightypercent && npm run render:prores:threeeditrules && npm run render:prores:overeditingvsproducing",
+    "render:prores:s10": "npm run render:prores:disorganizedvscompetent && npm run render:prores:tenpercent && npm run render:prores:haloeffect && npm run render:prores:threebackgroundrules",
+    "render:prores:ls1": "npm run render:prores:fiftyvsfiiftythousand && npm run render:prores:popularvsrespected && npm run render:prores:rightfivepercent && npm run render:prores:teachingvsdiagnosing && npm run render:prores:threeauditquestions",
+
+    "render:prores:focuspie":       "remotion render FocusPie             out/s1-01-focus-pie.mov              --codec prores --prores-profile 4444",
+    "render:prores:fourhours":      "remotion render FourHoursCost         out/s1-02-four-hours-cost.mov         --codec prores --prores-profile 4444",
+    "render:prores:23min":          "remotion render TwentyThreeMin        out/s1-03-twenty-three-min.mov        --codec prores --prores-profile 4444",
+    "render:prores:switching":      "remotion render SwitchingCost         out/s1-04-switching-cost.mov          --codec prores --prores-profile 4444",
+    "render:prores:90days":         "remotion render NinetyDays            out/s1-05-ninety-days.mov             --codec prores --prores-profile 4444",
+
+    "render:prores:5kphysics":      "remotion render FiveKvsPhysics        out/s2-01-5k-vs-physics.mov           --codec prores --prores-profile 4444",
+    "render:prores:interrogation":  "remotion render InterrogationShadows  out/s2-02-interrogation-shadows.mov   --codec prores --prores-profile 4444",
+    "render:prores:3fixes":         "remotion render ThreeFixes            out/s2-03-three-fixes.mov             --codec prores --prores-profile 4444",
+    "render:prores:hundredbeats":   "remotion render HundredBeats          out/s2-04-hundred-beats.mov           --codec prores --prores-profile 4444",
+
+    "render:prores:perceivedtruth": "remotion render PerceivedTruth        out/s3-01-perceived-truth.mov         --codec prores --prores-profile 4444",
+    "render:prores:listenerfatigue":"remotion render ListenerFatigue       out/s3-02-listener-fatigue.mov        --codec prores --prores-profile 4444",
+    "render:prores:audiofixes":     "remotion render ThreeAudioFixes       out/s3-03-three-audio-fixes.mov       --codec prores --prores-profile 4444",
+    "render:prores:3mics":              "remotion render ThreeMicsUnder50      out/s3-04-three-mics-under-50.mov         --codec prores --prores-profile 4444",
+
+    "render:prores:pitchvspartnership": "remotion render PitchVsPartnership out/s4-01-pitch-vs-partnership.mov        --codec prores --prores-profile 4444",
+    "render:prores:anchorpoints":       "remotion render AnchorPoints       out/s4-02-anchor-points.mov               --codec prores --prores-profile 4444",
+    "render:prores:threetechniques":    "remotion render ThreeTechniques    out/s4-03-three-techniques.mov            --codec prores --prores-profile 4444",
+    "render:prores:perfectvsprolific":  "remotion render PerfectVsProlific  out/s4-04-perfect-vs-prolific.mov         --codec prores --prores-profile 4444",
+
+    "render:prores:preparationfatigue": "remotion render PreparationFatigue out/s5-01-preparation-fatigue.mov     --codec prores --prores-profile 4444",
+    "render:prores:managervscreator":   "remotion render ManagerVsCreator   out/s5-02-manager-vs-creator.mov      --codec prores --prores-profile 4444",
+    "render:prores:setuptax":           "remotion render SetupTax           out/s5-03-setup-tax.mov               --codec prores --prores-profile 4444",
+    "render:prores:threebatchrules":    "remotion render ThreeBatchRules    out/s5-04-three-batch-rules.mov       --codec prores --prores-profile 4444",
+
+    "render:prores:hobbyistvsauthority": "remotion render HobbyistVsAuthority out/s6-01-hobbyist-vs-authority.mov  --codec prores --prores-profile 4444",
+    "render:prores:signalstrength":      "remotion render SignalStrength      out/s6-02-signal-strength.mov        --codec prores --prores-profile 4444",
+    "render:prores:flatvsdimensional":   "remotion render FlatVsDimensional   out/s6-03-flat-vs-dimensional.mov    --codec prores --prores-profile 4444",
+    "render:prores:threelights":         "remotion render ThreeLights         out/s6-04-three-lights.mov           --codec prores --prores-profile 4444",
+
+    "render:prores:highchaireffect":       "remotion render HighChairEffect       out/s7-01-high-chair-effect.mov      --codec prores --prores-profile 4444",
+    "render:prores:permissionvsdirection": "remotion render PermissionVsDirection out/s7-02-permission-vs-direction.mov --codec prores --prores-profile 4444",
+    "render:prores:authoritysignal":       "remotion render AuthoritySignal       out/s7-03-authority-signal.mov       --codec prores --prores-profile 4444",
+    "render:prores:threeframingrules":       "remotion render ThreeFramingRules       out/s7-04-three-framing-rules.mov          --codec prores --prores-profile 4444",
+
+    "render:prores:sixmonthsvssixtyseconds": "remotion render SixMonthsVsSixtySeconds out/s8-01-six-months-vs-sixty-seconds.mov   --codec prores --prores-profile 4444",
+    "render:prores:productivefailure":       "remotion render ProductiveFailure       out/s8-02-productive-failure.mov           --codec prores --prores-profile 4444",
+    "render:prores:threetests":              "remotion render ThreeTests              out/s8-03-three-tests.mov                  --codec prores --prores-profile 4444",
+    "render:prores:influencervssystem":      "remotion render InfluencerVsSystem      out/s8-04-influencer-vs-system.mov         --codec prores --prores-profile 4444",
+
+    "render:prores:editingtreadmill":       "remotion render EditingTreadmill       out/s9-01-editing-treadmill.mov          --codec prores --prores-profile 4444",
+    "render:prores:eightypercent":          "remotion render EightyPercent          out/s9-02-eighty-percent.mov             --codec prores --prores-profile 4444",
+    "render:prores:threeeditrules":         "remotion render ThreeEditRules         out/s9-03-three-edit-rules.mov           --codec prores --prores-profile 4444",
+    "render:prores:overeditingvsproducing": "remotion render OverEditingVsProducing out/s9-04-over-editing-vs-producing.mov  --codec prores --prores-profile 4444",
+
+    "render:prores:disorganizedvscompetent": "remotion render DisorganizedVsCompetent out/s10-01-disorganized-vs-competent.mov  --codec prores --prores-profile 4444",
+    "render:prores:tenpercent":              "remotion render TenPercent              out/s10-02-ten-percent.mov               --codec prores --prores-profile 4444",
+    "render:prores:haloeffect":              "remotion render HaloEffect              out/s10-03-halo-effect.mov               --codec prores --prores-profile 4444",
+    "render:prores:threebackgroundrules":    "remotion render ThreeBackgroundRules    out/s10-04-three-background-rules.mov    --codec prores --prores-profile 4444",
+
+    "render:prores:fiftyvsfiiftythousand":  "remotion render FiftyVsFiftyThousand out/ls1-01-fifty-vs-fifty-thousand.mov  --codec prores --prores-profile 4444",
+    "render:prores:popularvsrespected":     "remotion render PopularVsRespected   out/ls1-02-popular-vs-respected.mov    --codec prores --prores-profile 4444",
+    "render:prores:rightfivepercent":       "remotion render RightFivePercent     out/ls1-03-right-five-percent.mov      --codec prores --prores-profile 4444",
+    "render:prores:teachingvsdiagnosing":   "remotion render TeachingVsDiagnosing out/ls1-04-teaching-vs-diagnosing.mov  --codec prores --prores-profile 4444",
+    "render:prores:threeauditquestions":    "remotion render ThreeAuditQuestions  out/ls1-05-three-audit-questions.mov   --codec prores --prores-profile 4444"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.185",
+    "@remotion/google-fonts": "^4.0.185",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.185"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "typescript": "^5.4.5"
+  }
+}
