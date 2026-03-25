@@ -69,6 +69,16 @@ import { RightFivePercent }      from "./RightFivePercent";
 import { TeachingVsDiagnosing }  from "./TeachingVsDiagnosing";
 import { ThreeAuditQuestions }   from "./ThreeAuditQuestions";
 
+// ── Script 11: Authority Engine / Foundry Page ────────────────────────────
+import { ProductionTimeline } from "./ProductionTimeline";
+import { ProductionEffort }   from "./ProductionEffort";
+import { HelpfulIsNoise }   from "./HelpfulIsNoise";
+import { ContentTreadmill } from "./ContentTreadmill";
+import { OperatingManual }  from "./OperatingManual";
+import { AssetVsPost }      from "./AssetVsPost";
+import { ServiceToAsset }   from "./ServiceToAsset";
+import { FoundryAudit }     from "./FoundryAudit";
+
 // ── Long Script 2: Pre-Sales / Video as Infrastructure ─────────────────────
 import { WhatDoYouDo }          from "./WhatDoYouDo";
 import { NinetyPercent }        from "./NinetyPercent";
@@ -140,6 +150,16 @@ export const Root: React.FC = () => {
       <Composition id="TenPercent"              component={TenPercent}              durationInFrames={120} fps={30} width={1920} height={1080} />
       <Composition id="HaloEffect"              component={HaloEffect}              durationInFrames={120} fps={30} width={1920} height={1080} />
       <Composition id="ThreeBackgroundRules"    component={ThreeBackgroundRules}    durationInFrames={120} fps={30} width={1920} height={1080} />
+
+      {/* ── Script 11: Authority Engine / Foundry Page ───────────────────── */}
+      <Composition id="ProductionTimeline" component={ProductionTimeline} durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="ProductionEffort"   component={ProductionEffort}   durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="HelpfulIsNoise"   component={HelpfulIsNoise}   durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="ContentTreadmill" component={ContentTreadmill} durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="OperatingManual"  component={OperatingManual}  durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="AssetVsPost"      component={AssetVsPost}      durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="ServiceToAsset"   component={ServiceToAsset}   durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="FoundryAudit"     component={FoundryAudit}     durationInFrames={120} fps={30} width={1920} height={1080} />
 
       {/* ── Long Script 1: Specificity / Talking to the Right 5% ─────────── */}
       <Composition id="FiftyVsFiftyThousand" component={FiftyVsFiftyThousand} durationInFrames={210} fps={30} width={1920} height={1080} />

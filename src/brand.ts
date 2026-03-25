@@ -27,7 +27,7 @@ export const COLOR = {
 
 // ── Background gradient string ─────────────────────────────────────────────
 export const BG_GRADIENT =
-  `radial-gradient(ellipse at 50% 50%, ${COLOR.bgCenter} 0%, ${COLOR.bgCenter} 20%, ${COLOR.bgMid} 60%, ${COLOR.bgEdge} 100%)`;
+  `radial-gradient(ellipse at 50% 50%, ${COLOR.bgCenter} 0%, ${COLOR.bgCenter} 16%, ${COLOR.bgMid} 60%, ${COLOR.bgEdge} 100%)`;
 
 // ── Typography ─────────────────────────────────────────────────────────────
 export const FONT_WEIGHT = {
