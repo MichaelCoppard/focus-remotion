@@ -69,6 +69,12 @@ import { RightFivePercent }      from "./RightFivePercent";
 import { TeachingVsDiagnosing }  from "./TeachingVsDiagnosing";
 import { ThreeAuditQuestions }   from "./ThreeAuditQuestions";
 
+// ── Script 12: Foundry Page / Overlay Graphics ────────────────────────────
+import { AreYouRunningBusiness } from "./AreYouRunningBusiness";
+import { RealEstateAgency }      from "./RealEstateAgency";
+import { HighFrequencyForex }    from "./HighFrequencyForex";
+import { SportsRecruiters }      from "./SportsRecruiters";
+
 // ── Script 11: Authority Engine / Foundry Page ────────────────────────────
 import { ProductionTimeline } from "./ProductionTimeline";
 import { ProductionEffort }   from "./ProductionEffort";
@@ -165,6 +171,12 @@ export const Root: React.FC = () => {
       <Composition id="VideoAsEmployee"     component={VideoAsEmployee}     durationInFrames={323} fps={30} width={1920} height={1080} />
       <Composition id="ChasingVsAttracting" component={ChasingVsAttracting} durationInFrames={323} fps={30} width={1920} height={1080} />
       <Composition id="FrictionAudit"       component={FrictionAudit}       durationInFrames={323} fps={30} width={1920} height={1080} />
+
+      {/* ── Script 12: Foundry Page / Overlay Graphics ───────────────────── */}
+      <Composition id="AreYouRunningBusiness" component={AreYouRunningBusiness} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="RealEstateAgency"      component={RealEstateAgency}      durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="HighFrequencyForex"    component={HighFrequencyForex}    durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="SportsRecruiters"      component={SportsRecruiters}      durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 11: Authority Engine / Foundry Page ───────────────────── */}
       <Composition id="HelpfulIsNoise"     component={HelpfulIsNoise}     durationInFrames={323} fps={30} width={1920} height={1080} />

@@ -181,7 +181,13 @@
     "render:prores:s11:foundryaudit":      "remotion render FoundryAudit       out/FoundryAudit.mov       --codec prores --prores-profile 4444 --scale 2",
     "render:prores:s11:productiontimeline":"remotion render ProductionTimeline out/ProductionTimeline.mov --codec prores --prores-profile 4444 --scale 2",
     "render:prores:s11:productioneffort":  "remotion render ProductionEffort   out/ProductionEffort.mov   --codec prores --prores-profile 4444 --scale 2",
-    "render:prores:s11": "npm run render:prores:s11:helpfulisnoise && npm run render:prores:s11:contenttreadmill && npm run render:prores:s11:operatingmanual && npm run render:prores:s11:assetvspost && npm run render:prores:s11:servicetoasset && npm run render:prores:s11:foundryaudit && npm run render:prores:s11:productiontimeline && npm run render:prores:s11:productioneffort"
+    "render:prores:s11": "npm run render:prores:s11:helpfulisnoise && npm run render:prores:s11:contenttreadmill && npm run render:prores:s11:operatingmanual && npm run render:prores:s11:assetvspost && npm run render:prores:s11:servicetoasset && npm run render:prores:s11:foundryaudit && npm run render:prores:s11:productiontimeline && npm run render:prores:s11:productioneffort",
+
+    "render:prores:s12:areyourunning":      "remotion render AreYouRunningBusiness out/AreYouRunningBusiness.mov   --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s12:realestateagency":   "remotion render RealEstateAgency      out/RealEstateAgency.mov        --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s12:highfrequencyforex": "remotion render HighFrequencyForex    out/HighFrequencyForex.mov      --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s12:sportsrecruiters":   "remotion render SportsRecruiters      out/SportsRecruiters.mov        --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s12": "npm run render:prores:s12:areyourunning && npm run render:prores:s12:realestateagency && npm run render:prores:s12:highfrequencyforex && npm run render:prores:s12:sportsrecruiters"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.185",
