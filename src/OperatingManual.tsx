@@ -14,8 +14,8 @@ import { COLOR, FONT_WEIGHT, SPRING } from "./brand";
 import { GraphicWrapper } from "./GraphicWrapper";
 
 const SPOKES = [
-  { label: "DIAGNOSE FRICTION",        sub: "Find what's costing you authority",  angle: -120 },
-  { label: "EXPERTISE → IP",           sub: "Turn knowledge into assets that work for you",  angle: -60  },
+  { label: "DIAGNOSE FRICTION",        sub: "Find what's costing you authority in your niche",  angle: -120 },
+  { label: "EXPERTISE → VIDEO CONTENT",           sub: "Turn knowledge into assets that work for you",  angle: -60  },
   { label: "BUILD TRUST FIRST",        sub: "Before you ever hop on a discovery call", angle:  60  },
   { label: "RECLAIM YOUR TIME",        sub: "Stop posting. Start engineering.",    angle:  120 },
 ];
@@ -55,8 +55,8 @@ const Spoke: React.FC<{
   const nodeX = Math.cos(rad) * (HUB_R + SPOKE_LEN);
   const nodeY = Math.sin(rad) * (HUB_R + SPOKE_LEN);
 
-  // Text align based on which side
-  const isLeft = angle < 0;
+  // Text align based on which side (use x-position of node, not raw angle)
+  const isLeft = Math.cos(rad) < 0;
 
   return (
     <g opacity={op}>

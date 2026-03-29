@@ -9,6 +9,7 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Easing,
   interpolate,
   spring,
   useCurrentFrame,
@@ -28,28 +29,29 @@ export const GraphicWrapper: React.FC<{ children: React.ReactNode }> = ({
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
-  // Dissolve starts 0.5s before end
-  const dissolveStart = durationInFrames - 15;
+  // Out: 6-frame content fade (0.2s) + 8-frame bg clear = 14 frames total
+  const dissolveStart = durationInFrames - 14;
 
-  // ── Gradient + content fade out together ─────────────────────────────────
+  // ── Gradient + content fade out — ease-in (accelerates to invisible) ──────
   const contentOp = interpolate(
     frame,
-    [dissolveStart, dissolveStart + 7],
+    [dissolveStart, dissolveStart + 6],
     [1, 0],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) }
   );
 
   // ── Flat background clears over 8 frames after content is gone ───────────
   const bgOp = interpolate(
     frame,
-    [dissolveStart + 7, dissolveStart + 15],
+    [dissolveStart + 6, dissolveStart + 14],
     [1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   );
 
-  // ── Content fade-in + spring scale ───────────────────────────────────────
-  const fadeIn = interpolate(frame, [0, 8], [0, 1], {
+  // ── Content fade-in (0.3s) — ease-out cubic (snappy arrival) ─────────────
+  const fadeIn = interpolate(frame, [0, 9], [0, 1], {
     extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
   });
   const scale = spring({
     frame,

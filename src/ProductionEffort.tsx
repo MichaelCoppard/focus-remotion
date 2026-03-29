@@ -233,15 +233,15 @@ export const ProductionEffort: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <div style={{ opacity: footerOp, marginTop: 24 }}>
+        <div style={{ opacity: footerOp, marginTop: 43, textAlign: "center" }}>
           <span style={{
-            fontSize: 13,
+            fontSize: 18,
             fontWeight: FONT_WEIGHT.extraBold,
-            color: COLOR.ringSecondary,
-            letterSpacing: "0.14em",
+            color: COLOR.textPrimary,
+            letterSpacing: "0.12em",
             textTransform: "uppercase",
           }}>
-            EDITING ALONE TAKES AS LONG AS EVERYTHING BEFORE THE CAMERA
+            <span style={{ color: COLOR.ringSecondary }}>EDITING</span>{" ALONE TAKES AS LONG AS EVERYTHING BEFORE THE CAMERA"}
           </span>
         </div>
 

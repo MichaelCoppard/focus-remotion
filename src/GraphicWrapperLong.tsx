@@ -7,6 +7,7 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Easing,
   interpolate,
   spring,
   useCurrentFrame,
@@ -30,25 +31,27 @@ export const GraphicWrapperLong: React.FC<Props> = ({ children, footnote }) => {
   const { fps, durationInFrames } = useVideoConfig();
 
   // ── Same dissolve settings as GraphicWrapper ──────────────────────────────
-  const dissolveStart = durationInFrames - 15; // 0.5s before end
+  // Out: 6-frame content fade (0.2s) + 8-frame bg clear = 14 frames total
+  const dissolveStart = durationInFrames - 14;
 
   const contentOp = interpolate(
     frame,
-    [dissolveStart, dissolveStart + 7],
+    [dissolveStart, dissolveStart + 6],
     [1, 0],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) }
   );
 
   const bgOp = interpolate(
     frame,
-    [dissolveStart + 7, dissolveStart + 15],
+    [dissolveStart + 6, dissolveStart + 14],
     [1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   );
 
-  // ── Same content fade-in + spring scale as GraphicWrapper ─────────────────
-  const fadeIn = interpolate(frame, [0, 8], [0, 1], {
+  // ── Content fade-in (0.3s) — ease-out cubic (snappy arrival) ─────────────
+  const fadeIn = interpolate(frame, [0, 9], [0, 1], {
     extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
   });
   const scale = spring({
     frame,

@@ -161,7 +161,27 @@
     "render:prores:popularvsrespected":     "remotion render PopularVsRespected   out/ls1-02-popular-vs-respected.mov    --codec prores --prores-profile 4444",
     "render:prores:rightfivepercent":       "remotion render RightFivePercent     out/ls1-03-right-five-percent.mov      --codec prores --prores-profile 4444",
     "render:prores:teachingvsdiagnosing":   "remotion render TeachingVsDiagnosing out/ls1-04-teaching-vs-diagnosing.mov  --codec prores --prores-profile 4444",
-    "render:prores:threeauditquestions":    "remotion render ThreeAuditQuestions  out/ls1-05-three-audit-questions.mov   --codec prores --prores-profile 4444"
+    "render:prores:threeauditquestions":    "remotion render ThreeAuditQuestions  out/ls1-05-three-audit-questions.mov   --codec prores --prores-profile 4444",
+
+    "render:s11:helpfulisnoise":    "remotion render HelpfulIsNoise     out/s11-01-helpful-is-noise.webm      --pixel-format yuva420p --scale 2",
+    "render:s11:contenttreadmill":  "remotion render ContentTreadmill   out/s11-02-content-treadmill.webm    --pixel-format yuva420p --scale 2",
+    "render:s11:operatingmanual":   "remotion render OperatingManual    out/s11-03-operating-manual.webm     --pixel-format yuva420p --scale 2",
+    "render:s11:assetvspost":       "remotion render AssetVsPost        out/s11-04-asset-vs-post.webm        --pixel-format yuva420p --scale 2",
+    "render:s11:servicetoasset":    "remotion render ServiceToAsset     out/s11-05-service-to-asset.webm     --pixel-format yuva420p --scale 2",
+    "render:s11:foundryaudit":      "remotion render FoundryAudit       out/s11-06-foundry-audit.webm        --pixel-format yuva420p --scale 2",
+    "render:s11:productiontimeline":"remotion render ProductionTimeline out/s11-07-production-timeline.webm  --pixel-format yuva420p --scale 2",
+    "render:s11:productioneffort":  "remotion render ProductionEffort   out/s11-08-production-effort.webm    --pixel-format yuva420p --scale 2",
+    "render:s11": "npm run render:s11:helpfulisnoise && npm run render:s11:contenttreadmill && npm run render:s11:operatingmanual && npm run render:s11:assetvspost && npm run render:s11:servicetoasset && npm run render:s11:foundryaudit && npm run render:s11:productiontimeline && npm run render:s11:productioneffort",
+
+    "render:prores:s11:helpfulisnoise":    "remotion render HelpfulIsNoise     out/HelpfulIsNoise.mov     --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11:contenttreadmill":  "remotion render ContentTreadmill   out/ContentTreadmill.mov   --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11:operatingmanual":   "remotion render OperatingManual    out/OperatingManual.mov    --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11:assetvspost":       "remotion render AssetVsPost        out/AssetVsPost.mov        --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11:servicetoasset":    "remotion render ServiceToAsset     out/ServiceToAsset.mov     --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11:foundryaudit":      "remotion render FoundryAudit       out/FoundryAudit.mov       --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11:productiontimeline":"remotion render ProductionTimeline out/ProductionTimeline.mov --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11:productioneffort":  "remotion render ProductionEffort   out/ProductionEffort.mov   --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s11": "npm run render:prores:s11:helpfulisnoise && npm run render:prores:s11:contenttreadmill && npm run render:prores:s11:operatingmanual && npm run render:prores:s11:assetvspost && npm run render:prores:s11:servicetoasset && npm run render:prores:s11:foundryaudit && npm run render:prores:s11:productiontimeline && npm run render:prores:s11:productioneffort"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.185",

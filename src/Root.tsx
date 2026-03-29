@@ -91,90 +91,90 @@ export const Root: React.FC = () => {
   return (
     <>
       {/* ── Script 1: Focus / Productivity ─────────────────────────────── */}
-      <Composition id="FocusPie"       component={FocusPie}       durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="FourHoursCost"  component={FourHoursCost}  durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="TwentyThreeMin" component={TwentyThreeMin} durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="SwitchingCost"  component={SwitchingCost}  durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="NinetyDays"     component={NinetyDays}     durationInFrames={120}  fps={30} width={1920} height={1080} />
+      <Composition id="FocusPie"       component={FocusPie}       durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="FourHoursCost"  component={FourHoursCost}  durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="TwentyThreeMin" component={TwentyThreeMin} durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="SwitchingCost"  component={SwitchingCost}  durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="NinetyDays"     component={NinetyDays}     durationInFrames={323}  fps={30} width={1920} height={1080} />
 
       {/* ── Script 2: DIY Video / Physics of Looking Pro ────────────────── */}
-      <Composition id="FiveKvsPhysics"       component={FiveKvsPhysics}       durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="InterrogationShadows" component={InterrogationShadows} durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="ThreeFixes"           component={ThreeFixes}           durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="HundredBeats"         component={HundredBeats}         durationInFrames={120}  fps={30} width={1920} height={1080} />
+      <Composition id="FiveKvsPhysics"       component={FiveKvsPhysics}       durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="InterrogationShadows" component={InterrogationShadows} durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="ThreeFixes"           component={ThreeFixes}           durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="HundredBeats"         component={HundredBeats}         durationInFrames={323}  fps={30} width={1920} height={1080} />
 
       {/* ── Script 3: Audio / Perceived Truth ───────────────────────────── */}
-      <Composition id="PerceivedTruth"   component={PerceivedTruth}   durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="ListenerFatigue"  component={ListenerFatigue}  durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="ThreeAudioFixes"  component={ThreeAudioFixes}  durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeMicsUnder50" component={ThreeMicsUnder50} durationInFrames={120}  fps={30} width={1920} height={1080} />
+      <Composition id="PerceivedTruth"   component={PerceivedTruth}   durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="ListenerFatigue"  component={ListenerFatigue}  durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="ThreeAudioFixes"  component={ThreeAudioFixes}  durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeMicsUnder50" component={ThreeMicsUnder50} durationInFrames={323}  fps={30} width={1920} height={1080} />
 
       {/* ── Script 4: Authenticity / Performance ─────────────────────────── */}
-      <Composition id="PitchVsPartnership" component={PitchVsPartnership} durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="AnchorPoints"       component={AnchorPoints}       durationInFrames={120}  fps={30} width={1920} height={1080} />
-      <Composition id="ThreeTechniques"    component={ThreeTechniques}    durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="PerfectVsProlific"  component={PerfectVsProlific}  durationInFrames={120}  fps={30} width={1920} height={1080} />
+      <Composition id="PitchVsPartnership" component={PitchVsPartnership} durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="AnchorPoints"       component={AnchorPoints}       durationInFrames={323}  fps={30} width={1920} height={1080} />
+      <Composition id="ThreeTechniques"    component={ThreeTechniques}    durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="PerfectVsProlific"  component={PerfectVsProlific}  durationInFrames={323}  fps={30} width={1920} height={1080} />
 
       {/* ── Script 5: Batching / Preparation Fatigue ─────────────────────── */}
-      <Composition id="PreparationFatigue" component={PreparationFatigue} durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ManagerVsCreator"   component={ManagerVsCreator}   durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="SetupTax"           component={SetupTax}           durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeBatchRules"    component={ThreeBatchRules}    durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="PreparationFatigue" component={PreparationFatigue} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ManagerVsCreator"   component={ManagerVsCreator}   durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="SetupTax"           component={SetupTax}           durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeBatchRules"    component={ThreeBatchRules}    durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 6: Lighting / Signal Strength ─────────────────────────── */}
-      <Composition id="HobbyistVsAuthority" component={HobbyistVsAuthority} durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="SignalStrength"      component={SignalStrength}      durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="FlatVsDimensional"   component={FlatVsDimensional}   durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeLights"         component={ThreeLights}         durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="HobbyistVsAuthority" component={HobbyistVsAuthority} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="SignalStrength"      component={SignalStrength}      durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="FlatVsDimensional"   component={FlatVsDimensional}   durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeLights"         component={ThreeLights}         durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 7: Camera Framing / High Chair Effect ──────────────────── */}
-      <Composition id="HighChairEffect"       component={HighChairEffect}       durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="PermissionVsDirection" component={PermissionVsDirection} durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="AuthoritySignal"       component={AuthoritySignal}       durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeFramingRules"     component={ThreeFramingRules}     durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="HighChairEffect"       component={HighChairEffect}       durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="PermissionVsDirection" component={PermissionVsDirection} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="AuthoritySignal"       component={AuthoritySignal}       durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeFramingRules"     component={ThreeFramingRules}     durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 8: Productive Failure / First Video ────────────────────── */}
-      <Composition id="SixMonthsVsSixtySeconds" component={SixMonthsVsSixtySeconds} durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ProductiveFailure"       component={ProductiveFailure}       durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeTests"              component={ThreeTests}              durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="InfluencerVsSystem"      component={InfluencerVsSystem}      durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="SixMonthsVsSixtySeconds" component={SixMonthsVsSixtySeconds} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ProductiveFailure"       component={ProductiveFailure}       durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeTests"              component={ThreeTests}              durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="InfluencerVsSystem"      component={InfluencerVsSystem}      durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 9: Editing Treadmill / Diminishing Returns ─────────────── */}
-      <Composition id="EditingTreadmill"      component={EditingTreadmill}      durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="EightyPercent"         component={EightyPercent}         durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeEditRules"        component={ThreeEditRules}        durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="OverEditingVsProducing" component={OverEditingVsProducing} durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="EditingTreadmill"      component={EditingTreadmill}      durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="EightyPercent"         component={EightyPercent}         durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeEditRules"        component={ThreeEditRules}        durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="OverEditingVsProducing" component={OverEditingVsProducing} durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 10: Halo Effect / Background Staging ───────────────────── */}
-      <Composition id="DisorganizedVsCompetent" component={DisorganizedVsCompetent} durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="TenPercent"              component={TenPercent}              durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="HaloEffect"              component={HaloEffect}              durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeBackgroundRules"    component={ThreeBackgroundRules}    durationInFrames={120} fps={30} width={1920} height={1080} />
-
-      {/* ── Script 11: Authority Engine / Foundry Page ───────────────────── */}
-      <Composition id="ProductionTimeline" component={ProductionTimeline} durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="ProductionEffort"   component={ProductionEffort}   durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="HelpfulIsNoise"   component={HelpfulIsNoise}   durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ContentTreadmill" component={ContentTreadmill} durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="OperatingManual"  component={OperatingManual}  durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="AssetVsPost"      component={AssetVsPost}      durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="ServiceToAsset"   component={ServiceToAsset}   durationInFrames={120} fps={30} width={1920} height={1080} />
-      <Composition id="FoundryAudit"     component={FoundryAudit}     durationInFrames={120} fps={30} width={1920} height={1080} />
+      <Composition id="DisorganizedVsCompetent" component={DisorganizedVsCompetent} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="TenPercent"              component={TenPercent}              durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="HaloEffect"              component={HaloEffect}              durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeBackgroundRules"    component={ThreeBackgroundRules}    durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Long Script 1: Specificity / Talking to the Right 5% ─────────── */}
-      <Composition id="FiftyVsFiftyThousand" component={FiftyVsFiftyThousand} durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="PopularVsRespected"   component={PopularVsRespected}   durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="RightFivePercent"     component={RightFivePercent}     durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="TeachingVsDiagnosing" component={TeachingVsDiagnosing} durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="ThreeAuditQuestions"  component={ThreeAuditQuestions}  durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="FiftyVsFiftyThousand" component={FiftyVsFiftyThousand} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="PopularVsRespected"   component={PopularVsRespected}   durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="RightFivePercent"     component={RightFivePercent}     durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="TeachingVsDiagnosing" component={TeachingVsDiagnosing} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeAuditQuestions"  component={ThreeAuditQuestions}  durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Long Script 2: Pre-Sales / Video as Infrastructure ────────────── */}
-      <Composition id="WhatDoYouDo"         component={WhatDoYouDo}         durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="NinetyPercent"       component={NinetyPercent}       durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="SevenHours"          component={SevenHours}          durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="VideoAsEmployee"     component={VideoAsEmployee}     durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="ChasingVsAttracting" component={ChasingVsAttracting} durationInFrames={210} fps={30} width={1920} height={1080} />
-      <Composition id="FrictionAudit"       component={FrictionAudit}       durationInFrames={210} fps={30} width={1920} height={1080} />
+      <Composition id="WhatDoYouDo"         component={WhatDoYouDo}         durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="NinetyPercent"       component={NinetyPercent}       durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="SevenHours"          component={SevenHours}          durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="VideoAsEmployee"     component={VideoAsEmployee}     durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ChasingVsAttracting" component={ChasingVsAttracting} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="FrictionAudit"       component={FrictionAudit}       durationInFrames={323} fps={30} width={1920} height={1080} />
+
+      {/* ── Script 11: Authority Engine / Foundry Page ───────────────────── */}
+      <Composition id="HelpfulIsNoise"     component={HelpfulIsNoise}     durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ContentTreadmill"   component={ContentTreadmill}   durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="OperatingManual"    component={OperatingManual}    durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="AssetVsPost"        component={AssetVsPost}        durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ServiceToAsset"     component={ServiceToAsset}     durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="FoundryAudit"       component={FoundryAudit}       durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ProductionTimeline" component={ProductionTimeline} durationInFrames={476} fps={30} width={1920} height={1080} />
+      <Composition id="ProductionEffort"   component={ProductionEffort}   durationInFrames={466} fps={30} width={1920} height={1080} />
     </>
   );
 };

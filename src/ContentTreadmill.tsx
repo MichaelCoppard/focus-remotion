@@ -210,7 +210,7 @@ export const ContentTreadmill: React.FC = () => {
             letterSpacing: "0.16em",
             textTransform: "uppercase",
           }}>
-            EFFORT UP. RESULTS FLAT. SAME SPOT.
+            <span style={{ color: COLOR.textPrimary }}>EFFORT</span>{" UP. "}<span style={{ color: COLOR.textPrimary }}>RESULTS</span>{" FLAT. "}<span style={{ color: COLOR.textPrimary }}>SAME</span>{" SPOT."}
           </span>
         </div>
 

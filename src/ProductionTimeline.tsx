@@ -254,12 +254,12 @@ export const ProductionTimeline: React.FC = () => {
         <TimelineRow steps={ROW2} delays={ROW2_DELAYS} label="POST-PRODUCTION & STRATEGY" labelDelay={78} />
 
         {/* Footer */}
-        <div style={{ opacity: footerOp, marginTop: 20 }}>
+        <div style={{ opacity: footerOp, marginTop: 43, textAlign: "center" }}>
           <span style={{
-            fontSize: 13,
+            fontSize: 18,
             fontWeight: FONT_WEIGHT.extraBold,
-            color: COLOR.ringSecondary,
-            letterSpacing: "0.14em",
+            color: COLOR.textPrimary,
+            letterSpacing: "0.12em",
             textTransform: "uppercase",
           }}>
             EVERY STEP IS AN OPPORTUNITY TO LOSE OR HOLD AUTHORITY
