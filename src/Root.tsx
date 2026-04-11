@@ -85,6 +85,14 @@ import { FollowerAdStories }     from "./FollowerAdStories";
 
 import { MetaServiceAd }         from "./MetaServiceAd";
 
+// ── Script 14: Event Testimonials ─────────────────────────────────────────
+import { NinetyOnePercent }  from "./NinetyOnePercent";
+import { VideographerCost }  from "./VideographerCost";
+import { PSRFramework }      from "./PSRFramework";
+import { RiskMitigator }     from "./RiskMitigator";
+import { SMARTGuarantee }    from "./SMARTGuarantee";
+import { ThreeLightSetup }   from "./ThreeLightSetup";
+
 // ── Script 13: 1 Take Mental Model ────────────────────────────────────────
 import { TwentyTakes }           from "./TwentyTakes";
 import { BusinessOwnerVsCreator } from "./BusinessOwnerVsCreator";
@@ -213,6 +221,14 @@ export const Root: React.FC = () => {
 
       {/* ── Meta Service Ad ───────────────────────────────────────────────── */}
       <Composition id="MetaServiceAd" component={MetaServiceAd} durationInFrames={1} fps={30} width={1080} height={1350} />
+
+      {/* ── Script 14: Event Testimonials ────────────────────────────────── */}
+      <Composition id="NinetyOnePercent" component={NinetyOnePercent} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="VideographerCost" component={VideographerCost} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="PSRFramework"     component={PSRFramework}     durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="RiskMitigator"    component={RiskMitigator}    durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="SMARTGuarantee"   component={SMARTGuarantee}   durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeLightSetup"  component={ThreeLightSetup}  durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 13: 1 Take Mental Model ──────────────────────────────── */}
       <Composition id="TwentyTakes"            component={TwentyTakes}            durationInFrames={323} fps={30} width={1920} height={1080} />

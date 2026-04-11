@@ -209,7 +209,14 @@
     "render:prores:follower-stat-punch":"remotion render FollowerAdStatPunch  out/FollowerAdStatPunch.mov --codec prores --prores-profile 4444",
     "render:png:follower-stories":      "remotion still FollowerAdStories     out/FollowerAdStories.png",
     "render:all:follower-campaign": "npm run render:png:follower-photo-split && npm run render:png:follower-learn-list && npm run render:prores:follower-animated && npm run render:prores:follower-stat-punch && npm run render:png:follower-stories",
-    "render:png:meta-service-ad": "remotion still MetaServiceAd out/MetaServiceAd.png"
+    "render:png:meta-service-ad": "remotion still MetaServiceAd out/MetaServiceAd.png",
+    "render:prores:s14:ninetyonepercent":  "remotion render NinetyOnePercent  out/NinetyOnePercent.mov  --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s14:videographercost":  "remotion render VideographerCost  out/VideographerCost.mov  --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s14:psrframework":      "remotion render PSRFramework      out/PSRFramework.mov      --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s14:riskmitigator":     "remotion render RiskMitigator     out/RiskMitigator.mov     --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s14:smartguarantee":    "remotion render SMARTGuarantee    out/SMARTGuarantee.mov    --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s14:threelightsetup":   "remotion render ThreeLightSetup   out/ThreeLightSetup.mov   --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s14": "npm run render:prores:s14:ninetyonepercent && npm run render:prores:s14:videographercost && npm run render:prores:s14:psrframework && npm run render:prores:s14:riskmitigator && npm run render:prores:s14:smartguarantee && npm run render:prores:s14:threelightsetup"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.185",
