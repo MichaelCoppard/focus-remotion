@@ -187,7 +187,29 @@
     "render:prores:s12:realestateagency":   "remotion render RealEstateAgency      out/RealEstateAgency.mov        --codec prores --prores-profile 4444 --scale 2",
     "render:prores:s12:highfrequencyforex": "remotion render HighFrequencyForex    out/HighFrequencyForex.mov      --codec prores --prores-profile 4444 --scale 2",
     "render:prores:s12:sportsrecruiters":   "remotion render SportsRecruiters      out/SportsRecruiters.mov        --codec prores --prores-profile 4444 --scale 2",
-    "render:prores:s12": "npm run render:prores:s12:areyourunning && npm run render:prores:s12:realestateagency && npm run render:prores:s12:highfrequencyforex && npm run render:prores:s12:sportsrecruiters"
+    "render:prores:s12": "npm run render:prores:s12:areyourunning && npm run render:prores:s12:realestateagency && npm run render:prores:s12:highfrequencyforex && npm run render:prores:s12:sportsrecruiters",
+
+    "render:prores:s13:twentytakes":            "remotion render TwentyTakes            out/TwentyTakes.mov            --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s13:businessownervscreator": "remotion render BusinessOwnerVsCreator out/BusinessOwnerVsCreator.mov  --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s13:threehourcost":          "remotion render ThreeHourCost          out/ThreeHourCost.mov          --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s13:onetakementalmodel":     "remotion render OneTakeMentalModel     out/OneTakeMentalModel.mov     --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s13:twostepsystem":          "remotion render TwoStepSystem          out/TwoStepSystem.mov          --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s13:influencervsfounder":    "remotion render InfluencerVsFounder    out/InfluencerVsFounder.mov    --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s13:contentformats":         "remotion render ContentFormats         out/ContentFormats.mov         --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:s13": "npm run render:prores:s13:twentytakes && npm run render:prores:s13:businessownervscreator && npm run render:prores:s13:threehourcost && npm run render:prores:s13:onetakementalmodel && npm run render:prores:s13:twostepsystem && npm run render:prores:s13:influencervsfounder && npm run render:prores:s13:contentformats",
+    "render:prores:fb-follower": "remotion render FacebookFollowerAd out/FacebookFollowerAd.mov --codec prores --prores-profile 4444",
+    "render:png:fb-follower":       "remotion still FacebookFollowerAdStatic out/FacebookFollowerAdStatic.png",
+    "render:png:fb-follower-light": "remotion still FacebookFollowerAdLight  out/FacebookFollowerAdLight.png",
+    "render:png:fb-follower-blue":  "remotion still FacebookFollowerAdBlue    out/FacebookFollowerAdBlue.png",
+    "render:png:fb-follower-b":     "remotion still FacebookFollowerAdStaticB out/FacebookFollowerAdStaticB.png",
+
+    "render:png:follower-photo-split":  "remotion still FollowerAdPhotoSplit  out/FollowerAdPhotoSplit.png",
+    "render:png:follower-learn-list":   "remotion still FollowerAdLearnList   out/FollowerAdLearnList.png",
+    "render:prores:follower-animated":  "remotion render FollowerAdAnimated   out/FollowerAdAnimated.mov  --codec prores --prores-profile 4444",
+    "render:prores:follower-stat-punch":"remotion render FollowerAdStatPunch  out/FollowerAdStatPunch.mov --codec prores --prores-profile 4444",
+    "render:png:follower-stories":      "remotion still FollowerAdStories     out/FollowerAdStories.png",
+    "render:all:follower-campaign": "npm run render:png:follower-photo-split && npm run render:png:follower-learn-list && npm run render:prores:follower-animated && npm run render:prores:follower-stat-punch && npm run render:png:follower-stories",
+    "render:png:meta-service-ad": "remotion still MetaServiceAd out/MetaServiceAd.png"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.185",

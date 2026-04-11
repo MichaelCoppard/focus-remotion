@@ -69,6 +69,31 @@ import { RightFivePercent }      from "./RightFivePercent";
 import { TeachingVsDiagnosing }  from "./TeachingVsDiagnosing";
 import { ThreeAuditQuestions }   from "./ThreeAuditQuestions";
 
+// ── Facebook Ad Creative ──────────────────────────────────────────────────
+import { FacebookFollowerAd }        from "./FacebookFollowerAd";
+import { FacebookFollowerAdStatic }  from "./FacebookFollowerAdStatic";
+import { FacebookFollowerAdStaticB } from "./FacebookFollowerAdStaticB";
+import { FacebookFollowerAdLight }   from "./FacebookFollowerAdLight";
+import { FacebookFollowerAdBlue }    from "./FacebookFollowerAdBlue";
+
+// ── Follower Campaign — 5-variant set ─────────────────────────────────────
+import { FollowerAdPhotoSplit }  from "./FollowerAdPhotoSplit";
+import { FollowerAdLearnList }   from "./FollowerAdLearnList";
+import { FollowerAdAnimated }    from "./FollowerAdAnimated";
+import { FollowerAdStatPunch }   from "./FollowerAdStatPunch";
+import { FollowerAdStories }     from "./FollowerAdStories";
+
+import { MetaServiceAd }         from "./MetaServiceAd";
+
+// ── Script 13: 1 Take Mental Model ────────────────────────────────────────
+import { TwentyTakes }           from "./TwentyTakes";
+import { BusinessOwnerVsCreator } from "./BusinessOwnerVsCreator";
+import { ThreeHourCost }          from "./ThreeHourCost";
+import { OneTakeMentalModel }     from "./OneTakeMentalModel";
+import { TwoStepSystem }          from "./TwoStepSystem";
+import { InfluencerVsFounder }    from "./InfluencerVsFounder";
+import { ContentFormats }         from "./ContentFormats";
+
 // ── Script 12: Foundry Page / Overlay Graphics ────────────────────────────
 import { AreYouRunningBusiness } from "./AreYouRunningBusiness";
 import { RealEstateAgency }      from "./RealEstateAgency";
@@ -171,6 +196,32 @@ export const Root: React.FC = () => {
       <Composition id="VideoAsEmployee"     component={VideoAsEmployee}     durationInFrames={323} fps={30} width={1920} height={1080} />
       <Composition id="ChasingVsAttracting" component={ChasingVsAttracting} durationInFrames={323} fps={30} width={1920} height={1080} />
       <Composition id="FrictionAudit"       component={FrictionAudit}       durationInFrames={323} fps={30} width={1920} height={1080} />
+
+      {/* ── Facebook Ad Creative ──────────────────────────────────────────── */}
+      <Composition id="FacebookFollowerAd"       component={FacebookFollowerAd}       durationInFrames={180} fps={30} width={1080} height={1080} />
+      <Composition id="FacebookFollowerAdStatic" component={FacebookFollowerAdStatic} durationInFrames={1}   fps={30} width={1080} height={1080} />
+      <Composition id="FacebookFollowerAdLight"  component={FacebookFollowerAdLight}  durationInFrames={1}   fps={30} width={1080} height={1080} />
+      <Composition id="FacebookFollowerAdBlue"    component={FacebookFollowerAdBlue}    durationInFrames={1}   fps={30} width={1080} height={1080} />
+      <Composition id="FacebookFollowerAdStaticB" component={FacebookFollowerAdStaticB} durationInFrames={1}   fps={30} width={1080} height={1080} />
+
+      {/* ── Follower Campaign — 5-variant set ────────────────────────────── */}
+      <Composition id="FollowerAdPhotoSplit"  component={FollowerAdPhotoSplit}  durationInFrames={1}   fps={30} width={1080} height={1350} />
+      <Composition id="FollowerAdLearnList"   component={FollowerAdLearnList}   durationInFrames={1}   fps={30} width={1080} height={1080} />
+      <Composition id="FollowerAdAnimated"    component={FollowerAdAnimated}    durationInFrames={180} fps={30} width={1080} height={1350} />
+      <Composition id="FollowerAdStatPunch"   component={FollowerAdStatPunch}   durationInFrames={180} fps={30} width={1080} height={1080} />
+      <Composition id="FollowerAdStories"     component={FollowerAdStories}     durationInFrames={1}   fps={30} width={1080} height={1920} />
+
+      {/* ── Meta Service Ad ───────────────────────────────────────────────── */}
+      <Composition id="MetaServiceAd" component={MetaServiceAd} durationInFrames={1} fps={30} width={1080} height={1350} />
+
+      {/* ── Script 13: 1 Take Mental Model ──────────────────────────────── */}
+      <Composition id="TwentyTakes"            component={TwentyTakes}            durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="BusinessOwnerVsCreator" component={BusinessOwnerVsCreator} durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ThreeHourCost"          component={ThreeHourCost}          durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="OneTakeMentalModel"     component={OneTakeMentalModel}     durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="TwoStepSystem"          component={TwoStepSystem}          durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="InfluencerVsFounder"    component={InfluencerVsFounder}    durationInFrames={323} fps={30} width={1920} height={1080} />
+      <Composition id="ContentFormats"         component={ContentFormats}         durationInFrames={323} fps={30} width={1920} height={1080} />
 
       {/* ── Script 12: Foundry Page / Overlay Graphics ───────────────────── */}
       <Composition id="AreYouRunningBusiness" component={AreYouRunningBusiness} durationInFrames={323} fps={30} width={1920} height={1080} />
