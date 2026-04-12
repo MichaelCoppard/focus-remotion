@@ -1,15 +1,9 @@
 /**
  * SMARTGuarantee — Script 14: Event Testimonials
- * Foundry Media guarantee: if the strategy isn't SMART, full refund.
- * S — Specific / M — Measurable / A — Achievable / R — Realistic / T — Timebound
+ * "SMART" hero word at top — each letter lights gold as its row appears.
  */
 import React from "react";
-import {
-  interpolate,
-  spring,
-  useCurrentFrame,
-  useVideoConfig,
-} from "remotion";
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { COLOR, FONT_WEIGHT, SPRING } from "./brand";
 import { GraphicWrapper } from "./GraphicWrapper";
 
@@ -21,7 +15,44 @@ const SMART = [
   { letter: "T", word: "TIMEBOUND" },
 ];
 
-const ROW_DELAYS = [8, 32, 56, 80, 104];
+const ROW_DELAYS = [18, 42, 66, 90, 114];
+
+// Letter in the hero word — dims to steel blue, then lights to gold
+const HeroLetter: React.FC<{ letter: string; rowDelay: number }> = ({ letter, rowDelay }) => {
+  const frame = useCurrentFrame();
+  // 0 = steel-blue dim, 1 = gold lit
+  const lit = interpolate(frame, [rowDelay, rowDelay + 14], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  return (
+    <span style={{ position: "relative", display: "inline-block", width: 72, textAlign: "center" }}>
+      {/* Dim base */}
+      <span style={{
+        fontSize:   88,
+        fontWeight: FONT_WEIGHT.extraBold,
+        color:      COLOR.ringPrimary,
+        opacity:    0.22,
+        lineHeight: 1,
+      }}>
+        {letter}
+      </span>
+      {/* Gold overlay */}
+      <span style={{
+        position:   "absolute",
+        inset:      0,
+        fontSize:   88,
+        fontWeight: FONT_WEIGHT.extraBold,
+        color:      COLOR.ringSecondary,
+        opacity:    lit,
+        lineHeight: 1,
+        textAlign:  "center",
+      }}>
+        {letter}
+      </span>
+    </span>
+  );
+};
 
 const SmartRow: React.FC<{ item: typeof SMART[number]; delay: number }> = ({ item, delay }) => {
   const frame = useCurrentFrame();
@@ -34,52 +65,44 @@ const SmartRow: React.FC<{ item: typeof SMART[number]; delay: number }> = ({ ite
     to: 0,
     config: SPRING.smooth,
   });
-
   const rowOp = interpolate(frame, [delay, delay + 14], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
   });
 
   return (
     <div style={{
-      display: "flex",
+      display:    "flex",
       alignItems: "center",
-      gap: 28,
-      opacity: rowOp,
-      transform: `translateX(${slideX}px)`,
+      gap:        24,
+      opacity:    rowOp,
+      transform:  `translateX(${slideX}px)`,
     }}>
-
-      {/* Letter */}
+      {/* Lit letter accent (small, left) */}
       <span style={{
-        fontSize: 64,
+        fontSize:   28,
         fontWeight: FONT_WEIGHT.extraBold,
-        color: COLOR.ringSecondary,
+        color:      COLOR.ringSecondary,
         lineHeight: 1,
-        minWidth: 52,
-        textAlign: "center",
+        minWidth:   24,
+        textAlign:  "center",
       }}>
         {item.letter}
       </span>
 
       {/* Dash */}
-      <span style={{
-        fontSize: 28,
-        fontWeight: FONT_WEIGHT.extraBold,
-        color: COLOR.textSecondary,
-      }}>
+      <span style={{ fontSize: 20, fontWeight: FONT_WEIGHT.extraBold, color: COLOR.textSecondary }}>
         —
       </span>
 
       {/* Word */}
       <span style={{
-        fontSize: 32,
-        fontWeight: FONT_WEIGHT.extraBold,
-        color: COLOR.ringPrimary,
-        letterSpacing: "0.12em",
+        fontSize:      26,
+        fontWeight:    FONT_WEIGHT.extraBold,
+        color:         COLOR.ringPrimary,
+        letterSpacing: "0.1em",
       }}>
         {item.word}
       </span>
-
     </div>
   );
 };
@@ -87,18 +110,19 @@ const SmartRow: React.FC<{ item: typeof SMART[number]; delay: number }> = ({ ite
 export const SMARTGuarantee: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const headerOp = interpolate(frame, [0, 10], [0, 1], { extrapolateRight: "clamp" });
+  const headerOp  = interpolate(frame, [0, 10], [0, 1], { extrapolateRight: "clamp" });
+  const heroOp    = interpolate(frame, [0, 12], [0, 1], { extrapolateRight: "clamp" });
 
   return (
     <GraphicWrapper>
-      <div style={{ display: "flex", flexDirection: "column", gap: 10, alignItems: "flex-start" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 0, alignItems: "flex-start" }}>
 
         {/* Header */}
-        <div style={{ opacity: headerOp, marginBottom: 14 }}>
+        <div style={{ opacity: headerOp, marginBottom: 10 }}>
           <span style={{
-            fontSize: 13,
-            fontWeight: FONT_WEIGHT.extraBold,
-            color: COLOR.textSecondary,
+            fontSize:      13,
+            fontWeight:    FONT_WEIGHT.extraBold,
+            color:         COLOR.textSecondary,
             letterSpacing: "0.22em",
             textTransform: "uppercase",
           }}>
@@ -106,9 +130,25 @@ export const SMARTGuarantee: React.FC = () => {
           </span>
         </div>
 
-        {SMART.map((item, i) => (
-          <SmartRow key={i} item={item} delay={ROW_DELAYS[i]} />
-        ))}
+        {/* Hero SMART word */}
+        <div style={{
+          opacity:     heroOp,
+          display:     "flex",
+          gap:         4,
+          marginBottom: 22,
+          lineHeight:  1,
+        }}>
+          {SMART.map((item, i) => (
+            <HeroLetter key={i} letter={item.letter} rowDelay={ROW_DELAYS[i]} />
+          ))}
+        </div>
+
+        {/* Stagger rows */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          {SMART.map((item, i) => (
+            <SmartRow key={i} item={item} delay={ROW_DELAYS[i]} />
+          ))}
+        </div>
 
       </div>
     </GraphicWrapper>
