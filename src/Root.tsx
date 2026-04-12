@@ -133,6 +133,11 @@ import { FilmingMistake }          from "./FilmingMistake";
 import { AudioVsVideoTolerance }   from "./AudioVsVideoTolerance";
 import { MarketingBudgetHolder }   from "./MarketingBudgetHolder";
 
+// ── Meta Ad Campaign: Event Filming ───────────────────────────────────────
+import { EventPackageBreakdown } from "./EventPackageBreakdown";
+import { EventSocialProof }      from "./EventSocialProof";
+import { EventValueGraphic }     from "./EventValueGraphic";
+
 export const Root: React.FC = () => {
   return (
     <>
@@ -268,6 +273,11 @@ export const Root: React.FC = () => {
       <Composition id="FilmingMistake"         component={FilmingMistake}         durationInFrames={323}  fps={30} width={1920} height={1080} />
       <Composition id="AudioVsVideoTolerance"  component={AudioVsVideoTolerance}  durationInFrames={323}  fps={30} width={1920} height={1080} />
       <Composition id="MarketingBudgetHolder"  component={MarketingBudgetHolder}  durationInFrames={323}  fps={30} width={1920} height={1080} />
+
+      {/* ── Meta Ad Campaign: Event Filming ──────────────────────────────── */}
+      <Composition id="EventPackageBreakdown" component={EventPackageBreakdown} durationInFrames={436}  fps={30} width={1920} height={1080} />
+      <Composition id="EventSocialProof"      component={EventSocialProof}      durationInFrames={210}  fps={30} width={1920} height={1080} />
+      <Composition id="EventValueGraphic"     component={EventValueGraphic}     durationInFrames={390}  fps={30} width={1920} height={1080} />
     </>
   );
 };

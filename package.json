@@ -223,7 +223,12 @@
     "render:prores:s14:filmingmistake":        "remotion render FilmingMistake        out/FilmingMistake.mov        --codec prores --prores-profile 4444 --scale 2",
     "render:prores:s14:audiovsvideotolerance": "remotion render AudioVsVideoTolerance out/AudioVsVideoTolerance.mov --codec prores --prores-profile 4444 --scale 2",
     "render:prores:s14:marketingbudgetholder": "remotion render MarketingBudgetHolder out/MarketingBudgetHolder.mov --codec prores --prores-profile 4444 --scale 2",
-    "render:prores:s14": "npm run render:prores:s14:ninetyonepercent && npm run render:prores:s14:videographercost && npm run render:prores:s14:psrframework && npm run render:prores:s14:riskmitigator && npm run render:prores:s14:smartguarantee && npm run render:prores:s14:threelightsetup && npm run render:prores:s14:threelightdiagram2d && npm run render:prores:s14:smilesVsdatapoints && npm run render:prores:s14:pocketlightscost && npm run render:prores:s14:filmingmistake && npm run render:prores:s14:audiovsvideotolerance && npm run render:prores:s14:marketingbudgetholder"
+    "render:prores:s14": "npm run render:prores:s14:ninetyonepercent && npm run render:prores:s14:videographercost && npm run render:prores:s14:psrframework && npm run render:prores:s14:riskmitigator && npm run render:prores:s14:smartguarantee && npm run render:prores:s14:threelightsetup && npm run render:prores:s14:threelightdiagram2d && npm run render:prores:s14:smilesVsdatapoints && npm run render:prores:s14:pocketlightscost && npm run render:prores:s14:filmingmistake && npm run render:prores:s14:audiovsvideotolerance && npm run render:prores:s14:marketingbudgetholder",
+
+    "render:prores:eventads:packagebreakdown": "remotion render EventPackageBreakdown out/EventPackageBreakdown.mov --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:eventads:socialproof":      "remotion render EventSocialProof      out/EventSocialProof.mov      --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:eventads:valuegraphic":     "remotion render EventValueGraphic     out/EventValueGraphic.mov     --codec prores --prores-profile 4444 --scale 2",
+    "render:prores:eventads": "npm run render:prores:eventads:packagebreakdown && npm run render:prores:eventads:socialproof && npm run render:prores:eventads:valuegraphic"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.185",
