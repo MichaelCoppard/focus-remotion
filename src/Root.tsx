@@ -139,6 +139,7 @@ import { EventSocialProof }      from "./EventSocialProof";
 import { EventValueGraphic }     from "./EventValueGraphic";
 import { LinkedInCover }         from "./LinkedInCover";
 import { LinkedInCoverHeadshot } from "./LinkedInCoverHeadshot";
+import { LogoFMMonogram, LogoWordmark, LogoFMSplit, LogoFMSplitV2, LogoFMBlueGoldOutline, LogoFMGoldBlueOutline } from "./LinkedInLogos";
 
 export const Root: React.FC = () => {
   return (
@@ -284,6 +285,14 @@ export const Root: React.FC = () => {
       {/* ── LinkedIn Assets ─────────────────────────────────────────────── */}
       <Composition id="LinkedInCover"         component={LinkedInCover}         durationInFrames={1} fps={30} width={1584} height={396} />
       <Composition id="LinkedInCoverHeadshot" component={LinkedInCoverHeadshot} durationInFrames={1} fps={30} width={1584} height={396} />
+
+      {/* ── LinkedIn Logo Variations ─────────────────────────────────────── */}
+      <Composition id="LogoFMMonogram"        component={LogoFMMonogram}        durationInFrames={1} fps={30} width={300} height={300} />
+      <Composition id="LogoWordmark"          component={LogoWordmark}          durationInFrames={1} fps={30} width={300} height={300} />
+      <Composition id="LogoFMSplit"           component={LogoFMSplit}           durationInFrames={1} fps={30} width={300} height={300} />
+      <Composition id="LogoFMSplitV2"        component={LogoFMSplitV2}        durationInFrames={1} fps={30} width={300} height={300} />
+      <Composition id="LogoFMBlueGoldOutline" component={LogoFMBlueGoldOutline} durationInFrames={1} fps={30} width={300} height={300} />
+      <Composition id="LogoFMGoldBlueOutline" component={LogoFMGoldBlueOutline} durationInFrames={1} fps={30} width={300} height={300} />
     </>
   );
 };
