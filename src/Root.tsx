@@ -137,6 +137,8 @@ import { MarketingBudgetHolder }   from "./MarketingBudgetHolder";
 import { EventPackageBreakdown } from "./EventPackageBreakdown";
 import { EventSocialProof }      from "./EventSocialProof";
 import { EventValueGraphic }     from "./EventValueGraphic";
+import { LinkedInCover }         from "./LinkedInCover";
+import { LinkedInCoverHeadshot } from "./LinkedInCoverHeadshot";
 
 export const Root: React.FC = () => {
   return (
@@ -278,6 +280,10 @@ export const Root: React.FC = () => {
       <Composition id="EventPackageBreakdown" component={EventPackageBreakdown} durationInFrames={436}  fps={30} width={1920} height={1080} />
       <Composition id="EventSocialProof"      component={EventSocialProof}      durationInFrames={210}  fps={30} width={1920} height={1080} />
       <Composition id="EventValueGraphic"     component={EventValueGraphic}     durationInFrames={390}  fps={30} width={1920} height={1080} />
+
+      {/* ── LinkedIn Assets ─────────────────────────────────────────────── */}
+      <Composition id="LinkedInCover"         component={LinkedInCover}         durationInFrames={1} fps={30} width={1584} height={396} />
+      <Composition id="LinkedInCoverHeadshot" component={LinkedInCoverHeadshot} durationInFrames={1} fps={30} width={1584} height={396} />
     </>
   );
 };
