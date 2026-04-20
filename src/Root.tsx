@@ -139,6 +139,7 @@ import { EventSocialProof }      from "./EventSocialProof";
 import { EventValueGraphic }     from "./EventValueGraphic";
 import { LinkedInCover }         from "./LinkedInCover";
 import { LinkedInCoverHeadshot } from "./LinkedInCoverHeadshot";
+import { LinkedInFollowerAd }    from "./LinkedInFollowerAd";
 import { LogoFMMonogram, LogoWordmark, LogoFMSplit, LogoFMSplitV2, LogoFMBlueGoldOutline, LogoFMGoldBlueOutline } from "./LinkedInLogos";
 
 export const Root: React.FC = () => {
@@ -285,6 +286,7 @@ export const Root: React.FC = () => {
       {/* ── LinkedIn Assets ─────────────────────────────────────────────── */}
       <Composition id="LinkedInCover"         component={LinkedInCover}         durationInFrames={1} fps={30} width={1584} height={396} />
       <Composition id="LinkedInCoverHeadshot" component={LinkedInCoverHeadshot} durationInFrames={1} fps={30} width={1584} height={396} />
+      <Composition id="LinkedInFollowerAd"    component={LinkedInFollowerAd}    durationInFrames={1} fps={30} width={1200} height={628} />
 
       {/* ── LinkedIn Logo Variations ─────────────────────────────────────── */}
       <Composition id="LogoFMMonogram"        component={LogoFMMonogram}        durationInFrames={1} fps={30} width={300} height={300} />
