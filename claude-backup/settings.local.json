@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd.exe /c \"node --version && npm --version\" 2>&1)",
+      "Bash(cmd.exe /c \"where node\" 2>&1)",
+      "Bash(cmd.exe /c \"where npm 2>&1 & where node 2>&1 & where pnpm 2>&1\")",
+      "Bash(cmd.exe /c \"node -v\")",
+      "Bash(cmd.exe /c \"npm -v\")",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/mcopp/focus-remotion/**)",
+      "Bash(done)",
+      "Bash(mv \"s11-01-helpful-is-noise.mov\" \"HelpfulIsNoise.mov\")",
+      "Bash(mv \"s11-02-content-treadmill.mov\" \"ContentTreadmill.mov\")",
+      "Bash(mv \"s11-03-operating-manual.mov\" \"OperatingManual.mov\")",
+      "Bash(mv \"s11-04-asset-vs-post.mov\" \"AssetVsPost.mov\")",
+      "Bash(mv \"s11-05-service-to-asset.mov\" \"ServiceToAsset.mov\")",
+      "Bash(npm run:*)",
+      "Bash(mkdir -p /c/Users/mcopp/focus-remotion/public)",
+      "Bash(cp \"/c/Users/mcopp/OneDrive/Desktop/Profile Pictures/Coppard 043.jpg\" /c/Users/mcopp/focus-remotion/public/profile-043.jpg)",
+      "Bash(cp \"/c/Users/mcopp/OneDrive/Desktop/Profile Pictures/Coppard 085.jpg\" /c/Users/mcopp/focus-remotion/public/profile-085.jpg)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
